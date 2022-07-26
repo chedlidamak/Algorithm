@@ -1,18 +1,3 @@
-//0) arr1, arr2 integers
-//1) read arr1, arr2
-//2) compare arr1[i] to arr2[j]
-//3) if  arr1[i] <> arr2 [j] = true return k
-//4) else false
-//5) sum = arr[k]
-//6) read (sum, "distinct elements", k)
-
-//option 1 array
-//option 2 matrix
-//option 3 string
-//option 4 structures
-//option 5 stack and queues
-//option 6 hash tables
-//option 7 linkedlist
 
 //Solution 1-1
 ALGORITHM compare_two_arrays
@@ -108,9 +93,9 @@ BEGIN
         Read(arr2[j]);// insert from user
     END_FOR
 
-    IF (arr1[i] == arr2[j]) THEN // arr1=[2,5,12,7,2]      arr2[ 12, 0,7 3]
+    IF (arr1[i] = arr2[j]) THEN // arr1=[2,5,12,7,2]      arr2[ 12, 0,7 3]
     arr3 := push(arr1[i])
-    ELSE_IF (arr2[j] == arr1[i]) THEN
+    ELSE_IF (arr2[j] = arr1[i]) THEN
     arr3 := push(arr2[j])
     ELSE
     write("there are no same numbers")
@@ -150,9 +135,9 @@ BEGIN
     Read(key, value);
     END_FOR
 
-    IF arr1[key[value]] == arr2 [key[value]] THEN
+    IF arr1[key[value]] = arr2 [key[value]] THEN
     arr3.insert(arr1[key[value]])
-    ELSE_IF arr2[key[value]] == arr1[key[value]] THEN
+    ELSE_IF arr2[key[value]] = arr1[key[value]] THEN
     arr3.insert(arr2[key[value]])
     ELSE
         write("there are no unique numbers")
